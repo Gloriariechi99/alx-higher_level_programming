@@ -1,3 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def no_c(my_string):
-    return ("".join([c for c in my_string if c not in ['c', 'C']]))
+    result = []
+    for character in my_string:
+        if character != 'c' and character != 'C':
+            result.append(character)
+    return ''.join(result)
